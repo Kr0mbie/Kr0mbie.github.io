@@ -3,70 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-        img {
-            border-radius: 50%;
-            max-width: 150px;
-            margin-bottom: 20px;
-            transform: scale(1.5); /* Zooms the image by 50% */
-            overflow: hidden;
-            border: 5px solid #fff;
-        }
-        .linkedin-link, .email-button {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            color: #fff;
-            background-color: #0073b1;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .email-button {
-            background-color: #28a745;
-        }
-        .linkedin-link:hover, .email-button:hover {
-            opacity: 0.9;
-        }
-        iframe {
-            width: 80%;
-            height: 500px;
-            border: 1px solid #fff;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Your Name - Technology Specialist</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <h1>Welcome to My Site</h1>
-    <img src="BrycePic.jpg" alt="Your Picture">
-    <h2>Bryce Hurst</h2>
-    <p>Hey, I'm Bryce, and I've been an IT guy for the past 8 years, focusing on keeping systems running smoothly and securely. I've got a solid background in Windows and Linux, and I'm really into cloud solutions like Microsoft 365. I love the challenge of optimizing performance and making sure everything is safe and sound.
 
+    <header>
+        <div class="container">
+            <img src="BrycePic.jpg" alt="Your Profile Picture">
+            <h1>Bryce Hurst</h1>
+            <h2>Expert in IT Systems, Virtualization, and Networking</h2>
+        </div>
+    </header>
 
-Outside of work, I'm usually hitting the gym or cheering on the Oklahoma State Cowboys. I'm always eager to connect with other IT professionals and learn about the latest tech trends.</p>
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>This section will contain a brief summary of my technology experience and strengths.</p>
+            </div>
+        </section>
 
-    <a class="linkedin-link" href="https://www.linkedin.com/in/bryce-t-hurst/" target="_blank">Visit My LinkedIn</a>
-    <button class="email-button" onclick="sendEmail()">Email Me</button>
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Windows Server Administration</li>
+                    <li>Active Directory Administration</li>
+                    <li>Storage Area Networks (SANs)</li>
+                    <li>Backup and Disaster Recovery Solutions</li>
+                    <li>vSphere Administration</li>
+                    <li>Networking (VLANs, VPNs)</li>
+                </ul>
+            </div>
+        </section>
 
-    <!-- Embedded Resume -->
-    <iframe src="BryceResume.pdf" title="My Resume"></iframe>
+        <section id="experience">
+            <div class="container">
+                <h2>Work Experience</h2>
+                <a href="BryceResume.pdf" download>Download Resume</a>
+            </div>
+        </section>
 
-    <script>
-        function sendEmail() {
-            window.location.href = 'mailto:bryce.true.hurst@gmail.com';
-        }
-    </script>
+        <section id="linkedin">
+            <div class="container">
+                <h2>LinkedIn</h2>
+                <iframe src="https://www.linkedin.com/embed/profile/urn:li:person:bryce-t-hurst" height="400" width="400"></iframe> 
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form id="contactForm">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All Rights Reserved.</p> 
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script> 
+
 </body>
 </html>
