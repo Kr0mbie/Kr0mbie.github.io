@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -27,21 +28,21 @@
 
             height: 100vh;
 
-            background-color: #f4f4f4;
+            background-color: #007bff;
 
         }
 
         .container {
 
-            background-color: #007bff;
+            background-color: #fff;
 
-            padding: 20px;
+            padding: 40px;
 
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
             text-align: center;
 
-            max-width: 600px;
+            max-width: 1200px;
 
             width: 100%;
 
@@ -49,21 +50,11 @@
 
         }
 
-        .content {
-
-            background-color: #fff;
-
-            padding: 20px;
-
-            border-radius: 10px;
-
-        }
-
         .profile-image {
 
-            width: 150px;
+            width: 300px;
 
-            height: 150px;
+            height: 300px;
 
             border-radius: 50%;
 
@@ -97,6 +88,24 @@
 
         }
 
+        @media (max-width: 768px) {
+
+            .container {
+
+                padding: 20px;
+
+            }
+
+            .profile-image {
+
+                width: 150px;
+
+                height: 150px;
+
+            }
+
+        }
+
     </style>
 
 </head>
@@ -105,21 +114,17 @@
 
     <div class="container">
 
-        <div class="content">
+        <img src="BrycePic.jpg" alt="Profile Image" class="profile-image">
 
-            <img src="BrycePic.jpg" alt="Profile Image" class="profile-image">
+        <h1>Your Name</h1>
 
-            <h1>Bryce Hurst</h1>
+        <p>Your brief bio or introduction goes here.</p>
 
-            <p>Your brief bio or introduction goes here.</p>
+        <a href="BryceResume.pdf" class="button" target="_blank">Download Resume</a>
 
-            <a href="BryceResume.pdf" class="button" target="_blank">Download Resume</a>
+        <a href=mailto:emailforwarder4450@gmail.com class="button">Email Me</a>
 
-            <a href=mailto:bryce.true.hurst@gmail.com class="button">Email Me</a>
-
-            <a href=https://www.linkedin.com/in/bryce-t-hurst/ class="button" target="_blank">LinkedIn Profile</a>
-
-        </div>
+        <a href=https://www.linkedin.com/in/bryce-t-hurst class="button" target="_blank">LinkedIn Profile</a>
 
     </div>
 
