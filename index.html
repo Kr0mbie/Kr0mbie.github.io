@@ -1,7 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        img {
+            border-radius: 50%;
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        .resume-link, .linkedin-link, .email-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #0073b1;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .email-button {
+            background-color: #28a745;
+        }
+        .resume-link:hover, .linkedin-link:hover, .email-button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <h1>Welcome to My Resume Page</h1>
+    <img src="BrycePic.jpg" alt="Your Picture">
+    <h2>Your Name</h2>
+    <p>Here is a brief introduction about yourself or your professional summary.</p>
+
+    <a class="resume-link" href="BryceResume.pdf" target="_blank">View My Resume</a>
+    <a class="linkedin-link" href="https://www.linkedin.com/in/bryce-t-hurst" target="_blank">Visit My LinkedIn</a>
+    <button class="email-button" onclick="sendEmail()">Email Me</button>
+
+    <script>
+        function sendEmail() {
+            window.location.href = 'mailto:bryce.true.hurst@gmail.com';
+        }
+    </script>
 </body>
 </html>
