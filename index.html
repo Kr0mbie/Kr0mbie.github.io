@@ -1,88 +1,109 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Technology Specialist</title>
-    <link rel="stylesheet" href="style.css"> 
+
+    <title>My Resume</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            margin: 0;
+
+            padding: 0;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            height: 100vh;
+
+            background-color: #f4f4f4;
+
+        }
+
+        .container {
+
+            background-color: #fff;
+
+            padding: 20px;
+
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+            text-align: center;
+
+            max-width: 600px;
+
+            width: 100%;
+
+        }
+
+        .profile-image {
+
+            width: 150px;
+
+            height: 150px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+
+            margin-bottom: 20px;
+
+        }
+
+        .resume-link {
+
+            display: inline-block;
+
+            margin-top: 20px;
+
+            padding: 10px 20px;
+
+            background-color: #007bff;
+
+            color: #fff;
+
+            text-decoration: none;
+
+            border-radius: 5px;
+
+        }
+
+        .resume-link:hover {
+
+            background-color: #0056b3;
+
+        }
+
+    </style>
+
 </head>
+
 <body>
 
-    <header>
-        <div class="container">
-            <img src="BrycePic.jpg" alt="Your Profile Picture">
-            <h1>Bryce Hurst</h1>
-            <h2>Expert in IT Systems, Virtualization, and Networking</h2>
-        </div>
-    </header>
+    <div class="container">
 
-    <main>
-        <section id="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>This section will contain a brief summary of my technology experience and strengths.</p>
-            </div>
-        </section>
+        <img src="BrycePic.jpg" alt="Profile Image" class="profile-image">
 
-        <section id="skills">
-            <div class="container">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Windows Server Administration</li>
-                    <li>Active Directory Administration</li>
-                    <li>Storage Area Networks (SANs)</li>
-                    <li>Backup and Disaster Recovery Solutions</li>
-                    <li>vSphere Administration</li>
-                    <li>Networking (VLANs, VPNs)</li>
-                </ul>
-            </div>
-        </section>
+        <h1>Your Name</h1>
 
-        <section id="experience">
-            <div class="container">
-                <h2>Work Experience</h2>
-                <a href="BryceResume.pdf" download>Download Resume</a>
-            </div>
-        </section>
+        <p>Your brief bio or introduction goes here.</p>
 
-        <section id="linkedin">
-            <div class="container">
-                <h2>LinkedIn</h2>
-                <iframe src="https://www.linkedin.com/embed/profile/urn:li:person:bryce-t-hurst" height="400" width="400"></iframe> 
-                </div>
-            </div>
-        </section>
+        <a href="BryceResume.pdf" class="resume-link" target="_blank">Download Resume</a>
 
-        <section id="contact">
-            <div class="container">
-                <h2>Contact Me</h2>
-                <form id="contactForm">
-                    <div>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Your Name. All Rights Reserved.</p> 
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script> 
+    </div>
 
 </body>
+
 </html>
